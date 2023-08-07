@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@vk-io/hear": "^1.1.1",
+    "axios": "^1.4.0",
+    "googleapis": "^123.0.0",
+    "node-vk-bot-api": "^3.5.0",
+    "vk-io": "^4.8.3"
+  }
+}
