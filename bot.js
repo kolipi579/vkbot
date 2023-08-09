@@ -6,8 +6,16 @@ const{
     getSpreadSheetValues
 } = require('./googlesheetsapi.js')
 
-const spreadsheetId = '1H849d3GUueyfTwbvMdqfWnbXs0atBwTHUQzYcJpxx4E';
-const sheetName = './vkbot_google_spreadsheets_api.json';
+// const spreadsheetId = '1H849d3GUueyfTwbvMdqfWnbXs0atBwTHUQzYcJpxx4E';
+// const sheetName = './vkbot_google_spreadsheets_api.json';
+// Comands to set up google api
+// set GOOGLE_APPLICATION_CREDENTIALS=./vkbot_google_spreadsheets_api.json
+// set GCLOUD_PROJECT=1H849d3GUueyfTwbvMdqfWnbXs0atBwTHUQzYcJpxx4E  
+// Comand to start the bot it self
+// node bot.js 1H849d3GUueyfTwbvMdqfWnbXs0atBwTHUQzYcJpxx4E Sheet1
+
+const spreadsheetId = process.argv[2];
+const sheetName = process.argv[3];
 
 const baseBuilder = Keyboard.builder();
 
